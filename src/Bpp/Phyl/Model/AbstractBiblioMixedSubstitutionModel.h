@@ -51,6 +51,7 @@ namespace bpp
  */
 
   class AbstractBiblioMixedSubstitutionModel :
+	public virtual Clonable,
     public virtual MixedSubstitutionModel,
     public AbstractBiblioSubstitutionModel
   {

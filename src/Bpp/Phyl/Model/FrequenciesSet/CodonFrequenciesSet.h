@@ -105,6 +105,7 @@ public:
  *   frequencies are parameterized.
  */
 class FullCodonFrequenciesSet :
+  public virtual Clonable,
   public virtual CodonFrequenciesSet,
   public AbstractFrequenciesSet
 {
@@ -167,6 +168,7 @@ protected:
  * This set contains no parameter.
  */
 class FixedCodonFrequenciesSet :
+  public virtual Clonable,
   public virtual CodonFrequenciesSet,
   public AbstractFrequenciesSet
 {
@@ -229,6 +231,7 @@ protected:
  *
  */
 class FullPerAACodonFrequenciesSet :
+  public virtual Clonable,
   public virtual CodonFrequenciesSet,
   public AbstractFrequenciesSet
 {
@@ -313,6 +316,7 @@ protected:
  * @author Laurent Guéguen
  */
 class CodonFromIndependentFrequenciesSet :
+  public virtual Clonable,
   public virtual CodonFrequenciesSet,
   public WordFromIndependentFrequenciesSet
 {
@@ -391,6 +395,7 @@ public:
  */
 
 class CodonFromUniqueFrequenciesSet :
+  public virtual Clonable,
   public virtual CodonFrequenciesSet,
   public WordFromUniqueFrequenciesSet
 {

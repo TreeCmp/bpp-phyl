@@ -66,6 +66,7 @@ namespace bpp
  * @deprecated See GlobalClockTreeLikelihoodFunctionWrapper as a more general replacement.
  */
 class RHomogeneousClockTreeLikelihood:
+  public virtual Clonable,
   public RHomogeneousTreeLikelihood,
   public DiscreteRatesAcrossSitesClockTreeLikelihood
 {

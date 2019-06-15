@@ -75,6 +75,7 @@ namespace bpp
  * - Muse S.V. and Gaut B.S. (1994), Molecular_ Biology And Evolution_ 11(5) 715--724.
  */
   class MG94 :
+	public virtual Clonable,
     public AbstractBiblioSubstitutionModel,
     virtual public CodonReversibleSubstitutionModel
   {

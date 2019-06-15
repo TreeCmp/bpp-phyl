@@ -71,6 +71,7 @@ namespace bpp
  */
 
   class AbstractCodonSubstitutionModel :
+	public virtual Clonable,
     public virtual CodonSubstitutionModel,
     public AbstractWordSubstitutionModel
   {

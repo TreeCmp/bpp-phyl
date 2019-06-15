@@ -50,6 +50,7 @@ namespace bpp
  * @brief Parametrize a set of state frequencies for nucleotides.
  */
 class NucleotideFrequenciesSet :
+  public virtual Clonable,
   public virtual FrequenciesSet
 {
 public:
@@ -64,6 +65,7 @@ public:
  * @brief Nucleotide FrequenciesSet using only one parameter, the GC content.
  */
 class GCFrequenciesSet :
+  public virtual Clonable,
   public virtual NucleotideFrequenciesSet,
   public AbstractFrequenciesSet
 {
@@ -120,6 +122,7 @@ protected:
  * with \f$\pi_x\f$ the frequency of nucleotide \f$x\f$.
  */
 class FullNucleotideFrequenciesSet :
+  public virtual Clonable,
   public virtual NucleotideFrequenciesSet,
   public AbstractFrequenciesSet
 {
@@ -150,6 +153,7 @@ protected:
  * This set contains no parameter.
  */
 class FixedNucleotideFrequenciesSet :
+  public virtual Clonable,
   public virtual NucleotideFrequenciesSet,
   public FixedFrequenciesSet
 {

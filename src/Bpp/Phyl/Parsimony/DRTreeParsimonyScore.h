@@ -53,6 +53,7 @@ namespace bpp
  * Uses a DRTreeParsimonyData object for data storage.
  */
 class DRTreeParsimonyScore :
+  public virtual Clonable,
   public AbstractTreeParsimonyScore,
   public virtual NNISearchable
 {

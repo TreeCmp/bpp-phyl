@@ -296,7 +296,7 @@ void BppORateDistributionFormat::write(
   {
     if (comma)
       out << ",";
-    out << "n="  << dist.getNumberOfCategories();
+    out << "n="  << (int)dist.getNumberOfCategories();
     comma = true;
   }
 

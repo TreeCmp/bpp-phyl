@@ -72,6 +72,7 @@ class ProteinSubstitutionModel:
  * @brief Specialized interface for protein reversible substitution model.
  */
 class ProteinReversibleSubstitutionModel:
+  public virtual Clonable,
   public virtual ProteinSubstitutionModel,
   public virtual ReversibleSubstitutionModel
 {
@@ -87,6 +88,7 @@ class ProteinReversibleSubstitutionModel:
  * @brief Specialisation abstract class for protein substitution model.
  */
   class AbstractProteinSubstitutionModel :
+	public virtual Clonable,
     public AbstractSubstitutionModel,
     public virtual ProteinSubstitutionModel
   {

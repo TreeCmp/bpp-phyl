@@ -86,6 +86,7 @@ namespace bpp
  * -  Yang Z. and Nielsen R. (1998), _Journal of Molecular Evolution_ 46:409--418.
  */
   class YN98 :
+	public virtual Clonable,
     public AbstractBiblioSubstitutionModel,
     public virtual CodonReversibleSubstitutionModel
   {

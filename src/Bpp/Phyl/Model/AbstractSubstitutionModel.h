@@ -77,6 +77,7 @@ namespace bpp
  * Consider using the MarkovModulatedSubstitutionModel for more complexe cases.
  */
   class AbstractSubstitutionModel :
+	public virtual Clonable,
     public virtual SubstitutionModel,
     public virtual AbstractParameterAliasable
   {
@@ -453,6 +454,7 @@ namespace bpp
  * MarkovModulatedSubstitutionModel for more complexe cases.
  */
   class AbstractReversibleSubstitutionModel :
+	public virtual Clonable,
     public AbstractSubstitutionModel,
     public virtual ReversibleSubstitutionModel
   {

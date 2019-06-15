@@ -55,6 +55,7 @@ namespace bpp
  */	
 	
   class MvaFrequenciesSet :
+	public virtual Clonable,
     public virtual ProteinFrequenciesSet,
     public AbstractFrequenciesSet
   {

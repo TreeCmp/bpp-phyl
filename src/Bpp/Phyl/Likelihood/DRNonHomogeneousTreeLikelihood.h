@@ -66,6 +66,7 @@ namespace bpp
  * with a root multifurcation.
  */
 class DRNonHomogeneousTreeLikelihood:
+  public virtual Clonable,
   public AbstractNonHomogeneousTreeLikelihood,
   public DRTreeLikelihood
 {

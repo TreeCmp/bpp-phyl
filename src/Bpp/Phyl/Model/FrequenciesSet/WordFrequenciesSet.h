@@ -86,6 +86,7 @@ public:
 
 
 class AbstractWordFrequenciesSet :
+  public virtual Clonable,
   public virtual WordFrequenciesSet,
   public AbstractFrequenciesSet
 {

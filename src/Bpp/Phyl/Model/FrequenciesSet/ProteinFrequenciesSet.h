@@ -71,6 +71,7 @@ public:
  * @see Simplex
  */
 class FullProteinFrequenciesSet :
+  public virtual Clonable,
   public virtual ProteinFrequenciesSet,
   public FullFrequenciesSet
 {
@@ -95,6 +96,7 @@ public:
  * This set contains no parameter.
  */
 class FixedProteinFrequenciesSet :
+  public virtual Clonable,
   public virtual ProteinFrequenciesSet,
   public FixedFrequenciesSet
 {

@@ -1072,7 +1072,7 @@ void TreeTemplateTools::midRoot(TreeTemplate<Node>& tree, short criterion, bool 
 
   // reroot
   const double pos = best_root_branch.second["position"];
-  if (pos < 1e-6 or pos > 1 - 1e-6)
+  if (pos < 1e-6 || pos > 1 - 1e-6)
     // The best root position is on a node (this is often the case with the sum of squares criterion)
     tree.rootAt(pos < 1e-6 ? best_root_branch.first->getFather() : best_root_branch.first);
   else

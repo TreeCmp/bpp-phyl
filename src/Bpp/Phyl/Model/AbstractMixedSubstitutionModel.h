@@ -65,6 +65,7 @@ namespace bpp
  */
 
 class AbstractMixedSubstitutionModel :
+  public virtual Clonable,
   public virtual MixedSubstitutionModel,
   public AbstractSubstitutionModel
 {

@@ -78,6 +78,7 @@ namespace bpp
 
 
   class CodonSubstitutionModel:
+    public virtual Clonable,
     public virtual CoreCodonSubstitutionModel,
     public virtual SubstitutionModel
   {
@@ -96,6 +97,7 @@ namespace bpp
    * @author Julien Dutheil
    */
   class CodonReversibleSubstitutionModel:
+	public virtual Clonable,
     public virtual CodonSubstitutionModel,
     public virtual ReversibleSubstitutionModel 
   {

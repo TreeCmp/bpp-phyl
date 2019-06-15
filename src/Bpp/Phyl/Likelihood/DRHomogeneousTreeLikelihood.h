@@ -62,6 +62,7 @@ namespace bpp
  * All nodes share the same site patterns.
  */
 class DRHomogeneousTreeLikelihood:
+  public virtual Clonable,
   public AbstractHomogeneousTreeLikelihood,
   public DRTreeLikelihood
 {

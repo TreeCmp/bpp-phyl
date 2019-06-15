@@ -83,6 +83,7 @@ namespace bpp
  * This implementation copies the input tree in a TreeTemplate<Node> object.
  */
 class AbstractRewardMapping:
+	virtual public Clonable,
     virtual public RewardMapping,
     virtual public AbstractMapping
 {

@@ -88,7 +88,7 @@ namespace bpp
   
     double omegaR_, omegaC_;
 
-    std::vector<uint> assign_;
+    std::vector<unsigned int> assign_;
     
     std::shared_ptr<StateMap> stateMap_;
 
@@ -105,7 +105,7 @@ namespace bpp
     AbstractCodonClusterAASubstitutionModel(
       const GeneticCode* pgencode,
       const std::string& prefix,
-      const std::vector<uint>& assign = {1,2,3,3,3,2,2,1,2,4,4,2,4,4,1,3,3,2,2,1});
+      const std::vector<unsigned int>& assign = {1,2,3,3,3,2,2,1,2,4,4,2,4,4,1,3,3,2,2,1});
 
     AbstractCodonClusterAASubstitutionModel(const AbstractCodonClusterAASubstitutionModel& model) :
       AbstractParameterAliasable(model),
@@ -146,7 +146,7 @@ namespace bpp
       return 0;
     }
 
-    const std::vector<uint>& getAssign() const
+    const std::vector<unsigned int>& getAssign() const
     {
       return assign_;
     }

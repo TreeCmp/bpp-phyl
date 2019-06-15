@@ -72,6 +72,7 @@ namespace bpp
  */
 
   class AbstractKroneckerCodonSubstitutionModel :
+	public virtual Clonable,
     public virtual CodonSubstitutionModel,
     public AbstractKroneckerWordSubstitutionModel
   {

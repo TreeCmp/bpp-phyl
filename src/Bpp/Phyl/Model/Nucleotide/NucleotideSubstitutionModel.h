@@ -73,6 +73,7 @@ namespace bpp
  * @brief Specialisation interface for rversible nucleotide substitution model.
  */
   class NucleotideReversibleSubstitutionModel :
+	public virtual Clonable,
     public virtual NucleotideSubstitutionModel,
     public virtual ReversibleSubstitutionModel
   {
@@ -91,6 +92,7 @@ namespace bpp
  * @brief Specialisation abstract class for nucleotide substitution model.
  */
   class AbstractNucleotideSubstitutionModel :
+	public virtual Clonable,
     public AbstractSubstitutionModel,
     public virtual NucleotideSubstitutionModel
   {
@@ -115,6 +117,7 @@ namespace bpp
  * @brief Specialisation abstract class for reversible nucleotide substitution model.
  */
   class AbstractReversibleNucleotideSubstitutionModel :
+	public virtual Clonable,
     public AbstractReversibleSubstitutionModel,
     public virtual NucleotideSubstitutionModel
   {

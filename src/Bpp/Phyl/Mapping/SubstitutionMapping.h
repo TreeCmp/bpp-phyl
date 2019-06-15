@@ -90,6 +90,7 @@ namespace bpp
  * This implementation copies the input tree in a TreeTemplate<Node> object.
  */
 class AbstractSubstitutionMapping:
+	virtual public Clonable,
     virtual public SubstitutionMapping,
     virtual public AbstractMapping
 {

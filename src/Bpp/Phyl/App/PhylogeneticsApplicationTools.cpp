@@ -1467,7 +1467,7 @@ void PhylogeneticsApplicationTools::printParameters(const TransitionModel* model
 void PhylogeneticsApplicationTools::printParameters(const SubstitutionModelSet* modelSet, OutputStream& out, int warn, bool withAlias)
 {
   (out << "nonhomogeneous=general").endLine();
-  (out << "nonhomogeneous.number_of_models=" << modelSet->getNumberOfModels()).endLine();
+  (out << "nonhomogeneous.number_of_models=" << (int)modelSet->getNumberOfModels()).endLine();
 
   if (modelSet->isStationary())
     (out << "nonhomogeneous.stationarity = yes");
@@ -1500,13 +1500,13 @@ void PhylogeneticsApplicationTools::printParameters(const SubstitutionModelSet* 
 
     // Now print it:
     writtenNames.clear();
-    out.endLine() << "model" << (i + 1) << "=";
+    out.endLine() << "model" << (int)(i + 1) << "=";
     BppOSubstitutionModelFormat bIOsm(BppOSubstitutionModelFormat::ALL, true, true, true, false, warn);
     bIOsm.write(*model, out, aliases, writtenNames);
 
     out.endLine();
     vector<int> ids = modelSet->getNodesWithModel(i);
-    out << "model" << (i + 1) << ".nodes_id=" << ids[0];
+    out << "model" << (int)(i + 1) << ".nodes_id=" << ids[0];
     for (size_t j = 1; j < ids.size(); ++j)
     {
       out << "," << ids[j];

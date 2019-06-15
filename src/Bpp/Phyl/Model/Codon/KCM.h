@@ -74,6 +74,7 @@ namespace bpp
  */
   
   class KCM :
+	public virtual Clonable,
     public AbstractBiblioSubstitutionModel,
     public virtual CodonReversibleSubstitutionModel
   {

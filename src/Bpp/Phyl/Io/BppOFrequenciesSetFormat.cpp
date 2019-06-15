@@ -614,7 +614,7 @@ void BppOFrequenciesSetFormat::write(const FrequenciesSet* pfreqset,
     {
       if (i != 0)
         out << ", ";
-      out << "frequency" << i + 1 << "=";
+      out << "frequency"  << (int)i + 1 << "=";
       write(&pWFI->getFrequenciesSetForLetter(i), out, globalAliases, writtenNames);
     }
       comma = true;

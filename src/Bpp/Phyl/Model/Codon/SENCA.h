@@ -80,6 +80,7 @@ namespace bpp
    */
   
   class SENCA :
+	public virtual Clonable,
     public virtual SubstitutionModel,
     public AbstractCodonSubstitutionModel,
     public AbstractCodonDistanceSubstitutionModel,
